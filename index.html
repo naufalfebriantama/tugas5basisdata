@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+<!-- my CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>BELAJAR WEBSITE</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+      <!-- nav -->
+      <div class="navbar-fixed">
+        <nav class="grey darken-3">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#home" class="brand-logo">MNF</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+               
+                <li><a href="#services">Materi</a></li>
+                <li><a href="#contact">Kontak Saya</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+<!-- Sidenav -->
+<ul class="sidenav" id="mobile-nav">
+  
+  <li><a href="">Materi</a></li>
+  <li><a href="">Kontak Saya</a></li> 
+</ul>
+
+
+<!-- slider -->
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/slider/24.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="light grey-text text-lighten-4">Mappatunru Production</h3>
+          <h5 class="light grey-text text-lighten-4">Salamaki To Pada Salama</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider/23.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="light grey-text text-darken-4">Mappatunru Production</h3>
+          <h5 class="light grey-text text-darken-4">Taro Ada Taro Gau</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider/28.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3 class="light white-text text-darken-4">Mappatunru Production</h3>
+          <h5 class="light white-text text-darken-4">Makkiade' Na Malempu'</h5>
+        </div>
+      </li>
+    </ul>
+</div>
+
+
+
+    <!-- Servis -->
+    <section id="services" class="services grey lighten-3 scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center grey-text text-darken-3">Materi</h3>
+          <div class="col m12 s12">
+            <div class="card-panel center ">
+              <i class="material-icons medium">laptop_windows</i>
+              <h5>Pertemuan 5 Basis Data</h5>
+              <p>Tulisan Mengenai "Evaluation Plan MySQL, PostgreSQL, SQL Server, dan Oracle"</p>
+              <h5 class=" grey-text text-darken-3 left-align">My SQL</h5>
+              <p class="left-align">
+                MySQL menggunakan sintaks explain <query> yang sama dengan PostgreSQL, tetapi hasilnya adalah tabel yang isinya tidak mudah dipahami. Namun, menjalankan peringatan acara setelah perintah menjelaskan akan menampilkan rencana evaluasi dalam format yang lebih dapat dibaca manusia
+              </p>
+              <p class="left-align">
+                Tergantung detail tabel, kolom, indeks, dan kondisi di klausa WHERE, pengoptimal MySQL mempertimbangkan banyak teknik untuk melakukan pencarian yang terlibat dalam query SQL secara efisien. Query pada tabel besar dapat dilakukan tanpa membaca semua baris; gabungan yang melibatkan beberapa tabel dapat dilakukan tanpa membandingkan setiap kombinasi baris. Rangkaian operasi yang dipilih pengoptimal untuk menjalankan query paling efisien disebut "query execution plan", juga dikenal sebagai rencana EXPLAIN. Tujuan Anda adalah untuk mengenali aspek dari rencana EXPLAIN yang menunjukkan bahwa query dioptimalkan dengan baik, dan untuk mempelajari sintaks SQL dan teknik pengindeksan untuk meningkatkan rencana jika Anda melihat beberapa operasi yang tidak efisien.
+              </p>
+              <p class="left-align">
+                Perintah EXPLAIN memberikan informasi tentang bagaimana MySQL menjalankan query. EXPLAIN dapat bekerja dengan pernyataan SELECT, DELETE, INSERT, REPLACE, dan UPDATE. Pertama-tama akan menganalisis query asli, kemudian mencoba mengoptimalkan query dan melihat ke dalam rencana eksekusi query yang dioptimalkan untuk melihat apa yang berubah dan mengapa.Menggunakan EXPLAIN sesederhana pra-pending sebelum query SELECT
+              </p>
+              <p class="center-align">
+                <img src="img/clients/screenshot-266.png" >
+              </p>
+              <p class="left-align">
+                id - pengenal berurutan untuk setiap SELECT dalam query (untuk saat Anda memiliki subkueri bertingkat)​
+              </p>
+              <p class="left-align">
+                select_type - tipe query SELECT
+              </p>
+              <p class="left-align">
+                table - tabel yang dirujuk oleh baris
+              </p>
+              <p class="left-align">
+                type - bagaimana MySQL menggabungkan tabel yang digunakan. Ini adalah salah satu bidang yang paling berwawasan di keluaran karena dapat menunjukkan indeks yang hilang atau bagaimana kueri ditulis harus dipertimbangkan kembali.
+              </p>
+              <p class="left-align">
+                possible_keys - menunjukkan kunci yang dapat digunakan oleh MySQL untuk menemukan baris dari tabel, meskipun mereka mungkin atau mungkin tidak digunakan dalam praktiknya. Faktanya, kolom ini sering kali dapat membantu dalam mengoptimalkan kueri karena jika kolom tersebut NULL, ini menunjukkan tidak ada indeks yang relevan dapat ditemukan.
+              </p>
+              <p class="left-align">
+                key - menunjukkan indeks sebenarnya yang digunakan oleh MySQL. Kolom ini mungkin berisi indeks yang tidak terdaftar di kolom kunci_mungkin. Pengoptimal MySQL selalu mencari kunci optimal yang dapat digunakan untuk kueri. Saat bergabung dengan banyak tabel, ia mungkin menemukan beberapa kunci lain yang tidak terdaftar di kemungkinan_key tetapi lebih optimal.
+              </p>
+              <p class="left-align">
+                key_len - menunjukkan panjang indeks yang dipilih Query Optimizer untuk digunakan. Misalnya, nilai key_len 4 berarti membutuhkan memori untuk menyimpan empat karakter.
+              </p>
+              <p class="left-align">
+                ref - menunjukkan kolom atau konstanta yang dibandingkan dengan indeks bernama di kolom kunci. MySQL akan memilih nilai konstan untuk dibandingkan atau kolom itu sendiri berdasarkan rencana eksekusi kueri.
+              </p>
+              <p class="left-align">
+                row - daftar jumlah record yang diperiksa untuk menghasilkan output. Ini adalah kolom penting lainnya yang perlu difokuskan pada pengoptimalan kueri, terutama untuk kueri yang menggunakan JOIN dan subkueri.
+              </p>
+              <p class="left-align">
+                Extra - berisi informasi tambahan mengenai rencana eksekusi kueri. Nilai seperti "Using temporary", "Using filesort", dll. Di kolom ini mungkin menunjukkan kueri yang bermasalah.
+              </p>
+
+
+
+              <p class="left-align">
+                Berikut beberapa kiat-kiat dalam menjalankan perintah EXPLAIN
+              </p>
+              <p class="left-align">
+                1. Jalankan perintah EXPLAIN untuk memeriksa jalur eksekusi yang direncanakan untuk kueri SQL Anda.
+              </p>
+              <p class="left-align">
+                2. Lihat tabel urutan yang dipilih MySQL untuk eksekusi
+              </p>
+              <p class="left-align">
+                3. Temukan ketentuan di klausa WHERE yang paling selektif dan pastikan Anda membuat indeks yang optimal untuk menyertakannya
+              </p>
+              <p class="left-align">
+                4. Cari tempat-tempat MySQL tidak menggunakan indeks untuk pencarian dan pemfilteran, karena itu mungkin titik lemahnya.
+              </p>
+              <p class="left-align">
+                5. Cari baris di mana MySQL menunjukkan estimasi baris yang sangat tinggi yang perlu diperiksa untuk mengevaluasi kueri.
+              </p>
+
+
+
+
+              <h5 class=" grey-text text-darken-3 left-align">PostgreSQL</h5>
+
+              <p class="left-align">
+                Postgre memiliki kemampuan hebat untuk menunjukkan kepada bagaimana ia akan benar-benar mengeksekusi kueri di bawah sampulnya. Ini dikenal sebagai rencana eksekusi dan yang diungkapkan oleh explain . Memahami ini memberi tahu  bagaimana bisa mengoptimalkan database dengan indeks untuk meningkatkan kinerja. Bagian tersulit bagi sebagian besar pengguna adalah memahami keluaran dari ini. Meskipun ada banyak hal yang terlibat dalam pemahaman, berikut adalah beberapa hal utama yang harus diketahui sebagian besar pengembang.
+              </p>
+              <p class="left-align">
+                Setiap kueri dalam Postgre memiliki rencana eksekusi saat dieksekusi. Ada tiga bentuk dari menjalankan explain untuk diekspos:
+              </p>
+              <p class="left-align">
+                1. Bentuk umum (hanya menunjukkan apa yang kemungkinan besar akan terjadi)
+              </p>
+              <p class="left-align">
+                2. Analisis formulir (yang benar-benar menjalankan kueri dan menghasilkan apa yang terjadi)
+              </p>
+              <p class="left-align">
+                 3. Bentuk verbose (menjauh) 
+              </p>
+              <p class="left-align">
+                Umumnya, explain dijalankan pada pernyataan SELECT. Namun, dapat juga digunakan pada: 
+              </p>
+              <p class="left-align">
+                INSERT, UPDATE, DELETE, EXECUTE, DECLARE 
+              </p>
+              <p class="left-align">
+                Berikut kueri yang diambil dari halaman Postgres Using EXPLAIN:
+              </p>
+              <p class="left-align">
+                <img src="img/clients/screenshot-837.png" >
+              </p>
+              <p class="left-align">
+                <img src="img/clients/screenshot-838.png" >
+              </p>
+              <p class="left-align">
+                Postgres membangun struktur pohon dari node rencana yang mewakili berbagai tindakan yang diambil, dengan root dan masing-masing -> menunjuk ke salah satunya. Dalam beberapa kasus, EXPLAIN ANALYZE memberikan statistik eksekusi tambahan di luar waktu eksekusi dan jumlah baris, seperti Sort dan Hash di atas. Setiap baris selain yang pertama tanpa -> adalah informasi tersebut, jadi struktur kueri adalah:
+              </p>
+              <p class="left-align">
+                <img src="img/clients/screenshot-839.png" >
+              </p>
+              <p class="left-align">
+               Setiap cabang pohon mewakili sub-tindakan, dan Anda akan bekerja secara menyeluruh untuk menentukan apa yang terjadi "pertama" (meskipun urutan node pada tingkat yang sama bisa berbeda). 
+              </p>
+
+
+
+              <h5 class=" grey-text text-darken-3 left-align">SQL Server</h5>
+
+              <p class="left-align">
+                Kita bisa mendapatkan excecution plan aktual maupun sekedar estimasi untuk kueri tertentu, dan salah satu dari kedua jenis ini dapat ditampilkan sebagai grafik, teks, atau rencana XML. Satu-satunya perbedaan antara ketiga format ini adalah tingkat detail informasi yang ditampilkan. Namun, ketika rencana aktual diminta, kueri harus dijalankan, dan rencana tersebut kemudian ditampilkan bersama dengan hasil kueri. Di sisi lain, ketika perkiraan rencana diminta, kueri secara alami tidak dijalankan, dan rencana yang ditampilkan hanyalah rencana yang kemungkinan besar akan digunakan SQL Server jika kueri itu.dieksekusi (ingat bahwa kompilasi ulang, yang akan kita diskusikan nanti, dapat menghasilkan rencana yang berbeda pada waktu eksekusi). Namun demikian, menggunakan rencana yang diperkirakan memiliki beberapa keuntungan, termasuk menampilkan rencana untuk kueri yang berjalan lama untuk diperiksa tanpa benar-benar menjalankan kueri, atau menampilkan rencana untuk operasi pembaruan tanpa mengubah database.
+              </p>
+              <p class="left-align">
+                Anda dapat menampilkan rencana grafis di SQL Server Management Studio dengan mengklik Display Estimated Execution Plan atau tombol Include Actual Execution Plan dari toolbar SQL Editor, yang diaktifkan secara default. Mengklik Display Estimated Execution Plan akan segera menampilkan rencana tanpa menjalankan kueri, sedangkan untuk meminta rencana eksekusi yang sebenarnya Anda perlu mengklik Include Actual Execution Plan dan kemudian mengeksekusi kueri.
+              </p>
+              <p class="left-align">
+                <img src="img/clients/screenshot-835.png" >
+              </p>
+              <p class="left-align">
+                Seperti yang Anda lihat di Tabel 1, ada dua perintah untuk mendapatkan perkiraan rencana teks; SETEL SHOWPLAN_TEXT dan SET SHOWPLAN_ALL. Kedua pernyataan tersebut menunjukkan perkiraan rencana pelaksanaan, tetapi SET SHOWPLAN_ALL juga menunjukkan beberapa informasi tambahan, termasuk perkiraan jumlah baris, perkiraan biaya CPU, perkiraan biaya I / O, dan perkiraan biaya operator. Namun, versi terbaru dari Buku Daring, termasuk SQL Server 2008 R2, menunjukkan bahwa semua versi teks rencana eksekusi akan ditinggalkan di versi mendatang dari SQL Server.
+              </p>
+              <p class="left-align">
+                Untuk memperlihatkan rencana XML Anda bisa menggunakan perintah berikut:
+              </p>
+              <p class="left-align">
+                <img src="img/clients/screenshot-836.png" >
+              </p>
+
+
+
+
+
+              <h5 class=" grey-text text-darken-3 left-align">Oracle</h5>
+
+              <p class="left-align">
+                Rencana evaluasi query (Oracle menyebutnya sebagai "excecution plan") adalah program untuk mesin abstrak (juru bahasa) di dalam DBMS. Ini dihasilkan oleh pengoptimal query. Dalam kebanyakan sistem, query evaluation plan (QEP) mirip dengan ekspresi aljabar relasional (sangat bergantung pada sistem). Misalnya, perhatikan query SQL berikut
+              </p>
+              <p class="left-align">
+                SELECT   ENAME, DNAME
+              </p>
+              <p class="left-align">
+                FROM     EMP, DEPT
+              </p>
+              <p class="left-align">
+                WHERE    EMP.DEPTNO = DEPT.DEPTNO
+              </p>
+              <p class="left-align">
+                AND      JOB = ’MANAGER’
+              </p>
+              <p class="left-align">
+                <img src="img/clients/screenshot-263.png" >
+              </p>
+              <p class="left-align">
+                Cara Melihat Query Evaluation Plan (QEP) Oracle :
+              </p>
+              <p class="left-align">
+                1. Pertama, buat tabel "PLAN_TABLE" dengan kolom yang ditentukan di mana Oracle akan menyimpan informasi tentang QEP. Tabel harus ada di bawah akun setiap pengguna yang ingin melihat QEP (gunakan Contoh 1 sebagai ilustrasi)
+              </p>
+              <p class="left-align">
+                2. Cara termudah untuk melakukannya adalah dengan menjalankan skrip $ORACLE_HOME/rdbms/admin/utlxplan.sql
+              </p>
+              <p class="left-align">
+                3. Kemudian masukkan perintah berikut di SQL * Plus: SET AUTOTRACE ON EXPLAIN 
+              </p>
+              <p class="left-align">
+                4. Kemudian Oracle akan menampilkan informasi tentang QEP untuk semua query (tidak semua detail, hanya struktur umum). Jika seseorang keluar dari SQL * Plus, pengaturan AUTOTRACE akan terlupakan, tetapi PLAN_TABLE masih ada. 
+              </p>
+              <p class="left-align">
+                5. Output yang Anda dapatkan dari AUTOTRACE bukan dalam bentuk grafik seperti gambar di atas, tetapi dalam bentuk tekstual (dengan lekukan)
+              </p>
+              <p class="left-align">
+                6. Output yang Anda dapatkan dari AUTOTRACE bukan dalam bentuk grafik seperti gambar di atas, tetapi dalam bentuk tekstual (dengan lekukan). Contoh (menggunakan ilustrasi Contoh 1):
+              </p>
+              <p class="left-align">
+                <img src="img/clients/screenshot-265.png" >
+              </p>
+              <p class="left-align">
+                7. Angka pertama mengidentifikasi node pohon (ditampilkan di atas di sudut kiri atas), angka kedua adalah node induk.
+              </p>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+<!-- Kontak Saya -->
+        <section id="contact" class="contact grey lighten-3 scrollspy">
+          <div class="container">
+            <h3 class="light grey-text text-darken-3 center">Kontak Saya</h3>
+            <div class="row">
+              <div class="col m6 s12 ">
+              <div class="card-panel grey darken-2 center white-text">
+                <i class="material-icons medium">email</i>
+                <h5>Email</h5>
+                <p>naufal77febriantama@gmail.com</p>
+
+              </div>
+              <ul class="collection with-header">
+                <li class="collection-header"><h5>INFO UMUM</h5></li>
+                <li class="collection-item">Muh. Naufal Febriantama</li>
+                <li class="collection-item">D121181021</li>
+                <li class="collection-item">Teknik Informatika</li>
+              </ul>
+              </div>
+              <div class="col m6 s12">
+              <div class="card-panel center ">
+              <img class="activator"src="img/portfolio/instagram.png">
+              <h6><a href="https://www.instagram.com/naufalfebriantama/">Instagram</a></h6>
+              </div>
+              <div class="card-panel center small">
+             <img class="activator" src="img/portfolio/facebook.png">
+              <h6><a href="https://www.facebook.com/naufalfebriantama.alfariz?ref=bookmarks">Facebook</a></h6>
+              </div>
+           
+            </div>
+            
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="grey darken-2 white-text center">
+          <p>Teknik Informatika UNHAS. Copyright 2020.</p>
+        </footer>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider =document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 600,
+          interval: 3000
+        });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll, {
+          scrollOffset: 50
+        })
+
+       
+
+       
+      </script>
+
+    </body>
+  </html>
+        
